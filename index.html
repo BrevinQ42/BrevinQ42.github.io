@@ -1,1 +1,223 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+	    <title>Nate Brevin Que - Game Development Portfolio</title>
+	    <style>
+	    	body {
+	    		background-color: gray;
+	    		color: lightblue;
+	    	}
+	    	h1 {
+	    		font-size: 36px;
+            	display: flex; 
+            	justify-content: center; 
+	    		align-content: center;
+	    	}
+	    	h2 {
+	    		font-size: 24px;
+            	display: flex; 
+            	justify-content: center; 
+	    		align-content: center;
+	    		color: blue;
+	    		margin-bottom: 10px;
+	    	}
+	    	.intro {
+	    		background-color: black;
+	    		padding: 10px 10px;
+	    		margin-top: 36px;
+	    		margin-left: 12.5%;
+	    		width: 75%;
+	    		font-size: 18px;
+            	display: flex; 
+	    	}
+	    	.projects-container {
+	    		background-color: white;
+	    		padding: 1% 1%;
+	    		display: grid;
+	    		width: 90%;
+	    		margin-left: 5%;
+                grid-template-columns: 30% 30% 30%;
+                gap: 2.5%;
+                justify-content: center;
+                align-items: center;
+	    	}
+	    	.project {
+	    		height: 500px;
+	    		font-size: 16px;
+	    		text-align: justify;
+	    		color: black;
+	    	}
+	    	.project img {
+	    		width: 100%;
+	    		height: 200px;
+	    	}
+	    	.project iframe {
+	    		width: 100%;
+	    		height: 200px;
+	    	}
+	    </style>
+	</head>
+	<body>
+	    <div id="content" style="margin-top:60px">
+	    	<h1>
+	    		Hello, World!
+	    	</h1>
+	    	<h1>
+	    		I am Nate Brevin A. Que and this is my Game Development Portfolio. 
+	    	</h1>
+
+	    	<div class="intro">
+	    		<p>
+	    			I am currently a <b>Third Year Computer Science / Game Development student</b>
+	    			at the <b>Ateneo de Manila University</b>, expected to graduate on <b>June 2026</b>.
+	    			In game development, I focus on the implementation of the <b>functionalities of the
+	    			game</b> due to my interest in the technical side of programming in general.
+	    			<br><br>
+	    			This portfolio shows some of the <b>games</b> and <b>web applications</b> I worked
+	    			on. These projects are mostly developed as <b>requirements in Ateneo</b> and <b>in
+	    			Harvard's Introduction to Game Development (GD50) course</b> that was self-paced
+	    			and was conducted online. It must be noted that many of the graphical features in
+	    			these projects were implemented by other people, such as my team mates and the
+	    			instructor from Harvard, but I was also able to implement some myself.
+	    		</p>
+	    	</div>
+
+	    	<h1 style='color:blue'>Game Projects</h1>
+	    	<div class="projects-container">
+		    	<div class="project">
+		    		<iframe src="https://www.youtube.com/embed/TvAWbwHkxb8?si=ugHHQogR8iGoVsuH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		    		<br>
+		    		<h2>GOAAAALL</h2>
+		    		<div style='color:lightcoral;'>[lua, LOVE2D]</div>
+
+		    		<p>
+		    			This is a one-on-one football game wherein each player controls one character each.
+		    			Each player bumps or kicks the ball to the opposing goal post to score a point and
+		    			whoever scores more after 3 and a half minutes win. In case of a tie, there will
+		    			be a sudden death, where the gameplay resumes from where it stopped as the timer
+		    			went down to 0 and whoever scores first wins.
+		    		</p>
+		    	</div>
+
+		    	<div class="project">
+		    		<img src="images/tps-image.png">
+		    		<br>
+		    		<h2>Third Person Shooter</h2>
+		    		<div style='color:lightcoral;'>[C#, UnityEngine]</div>
+		    		<a href="https://github.com/BrevinQ42/ThirdPersonShooter">Link to GitHub repository</a>
+
+		    		<p>
+		    			This involves the core mechanics of a third person shooter, specifically player
+		    			movement and look-around, both of which the camera follows, a weapon that shoots
+		    			a projectile (like the red particles in the image) on command towards the target
+		    			reticle, and objects--such as spheres in the image--that will be destroyed once
+		    			it is shot a couple of times.
+		    		</p>
+		    	</div>
+
+		    	<div class="project">
+		    		<img src="images/tbm-image.png">
+		    		<br>
+		    		<h2>Tile-Based Movement</h2>
+		    		<div style='color:lightcoral;'>[C#, UnityEngine]</div>
+		    		<a href="https://github.com/BrevinQ42/Tile-Based-Movement">Link to GitHub repository</a>
+
+		    		<p>
+		    			This involves the core mechanics of a game that utilizes tile-based movement. Other
+		    			than the basic movement in this implementation, this also includes tiles that force
+		    			movement to a specific direction (arrow tiles), tiles that force movement based
+		    			on which direction the player is facing (blood-like tiles), and walls (such as the
+		    			volcano).
+		    		</p>
+		    	</div>
+
+		    	<div class="project">
+		    		<img src="images/shmup-image.png">
+		    		<br>
+		    		<h2>Shoot 'Em Up</h2>
+		    		<div style='color:lightcoral;'>[C#, UnityEngine]</div>
+		    		<a href="https://github.com/BrevinQ42/Shmup">Link to GitHub repository</a>
+
+		    		<p>
+		    			This involves the core mechanics of a shoot 'em up (or shmup), which includes the
+		    			player being able to control a character (the rectangle) that shoots projectiles
+		    			(green lines) to destroy the enemies (the circles). The player has an HP, shown by
+		    			the bar below the character model, which they have to preserve. The enemies, on the
+		    			other hand, come from one side of the screen, and they continue to move towards the
+		    			other side without pause, unless they are destroyed. They also shoot projectiles
+		    			(red lines) back at the player.
+		    		</p>
+		    	</div>
+
+		    	<div class="project">
+		    		<iframe src="https://www.youtube.com/embed/iHtPMklC7RU?si=_3ctfn1NTNWX1GRO&amp;start=82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		    		<br>
+		    		<h2>Angry 50: The Tri-shot Update</h2>
+		    		<div style='color:lightcoral;'>[lua, LOVE2D]</div>
+
+		    		<p>
+		    			From the Harvard instructor's implementation of the core mechanics of Angry Birds, I
+		    			added a new feature that allows the bird to spawn two more versions of itself above
+		    			and below it, and the duplicates share the same velocity as the original one. In
+		    			short, I added the mechanics of the small blue bird from the Angry Birds games.
+		    		</p>
+		    	</div>
+
+		    	<div class="project">
+		    		<img src="images/plat-image.png">
+		    		<br>
+		    		<h2>Platformer</h2>
+		    		<div style='color:lightcoral;'>[C#, UnityEngine]</div>
+		    		<a href="https://github.com/BrevinQ42/Platformer">Link to GitHub repository</a>
+
+		    		<p>
+		    			This involves the core mechanics of a platformer, which includes moving and
+		    			stationary platforms, walls, items to be picked up (small white squares),
+		    			and warps (pink squares) that teleport the player to a specific spot within
+		    			the map. The camera also follows the player's movement; in my implementation,
+		    			there is no camera drift.
+		    		</p>
+		    	</div>
+	    	</div>
+	    	
+	    	<div style='background-color: white; padding: 1% 1%; width: 90%; margin-left: 5%; justify-content: center; align-content: center; text-align: center;'>
+		    	<h2>
+		    		You can check the link down below to access the playlist containing
+		    		the demo videos of my other game projects
+		    	</h2>
+		    	<a href="https://youtube.com/playlist?list=PLQjFLgPzJ-bheAFJOWGa6-Do04jP7TEpu&si=7vBBFKxAEj3C2A6k">Link to Playlist</a>
+		    </div>
+
+		    <h1 style='color:blue'>Web Application Projects</h1>
+		    <div class="projects-container">
+				<div class="project">
+		    		<img src="images/laban-image.png">
+		    		<br>
+		    		<h2>laban.gg</h2>
+		    		<div style='color:lightcoral;'>[Python, Django, HTML]</div>
+
+		    		<p>
+		    			This website, when deployed, is meant to be a centralized platform for Philippine-based
+		    			tournaments for fighting games in which tournament organizers can host their tournaments,
+		    			and attendees can participate or keep track of said tournaments. This web application will
+		    			be able to aid organizers in marketing and administering their tournaments, and aid players
+		    			to look for opportunities to build and cement their status in the esports scene.
+		    		</p>
+		    	</div>
+
+		    	<div class="project">
+		    		<img src="images/qlinx-image.png">
+		    		<br>
+		    		<h2>Inventory System for Family Business</h2>
+		    		<div style='color:lightcoral;'>[Python, Django, HTML]</div>
+
+		    		<p>
+		    			This web application is a personal project I am working on with my older brother. This is meant
+		    			to aid our family business with keeping track of inventory using paperless and faster means.
+		    		</p>
+		    	</div>
+		    </div>
+	    </div>
+	</body>
+</html>
